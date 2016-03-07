@@ -2,9 +2,12 @@ $(function() {
 
   $("button").on("click", function() {
     var size = prompt ("Enter a number between 10 and 100.");
-    for(var i = 0; i<=size.parseInt(); i++) {
-      $(".board").append("<div class='square'></div>");
+    var squares = Math.ceil(parseInt(size))*Math.ceil(parseInt(size));
+    var square = "<div class='square'></div>"
+    for(var i = 0; i <= squares; i++) {
+      $(".board").append(square);
     };
   });
 
 })
+
