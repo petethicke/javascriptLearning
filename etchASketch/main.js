@@ -9,7 +9,14 @@ $(function() {
     for(var i = 0; i <= squares; i++) {
       $(".board").append(square);
     };
+    changeColor();
   });
+
+  function changeColor() {
+    $(".square").on("mouseenter", function() {
+      $(this).css("background-color", "white");
+    })
+  };
 
 })
 

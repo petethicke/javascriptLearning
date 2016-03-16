@@ -2,6 +2,10 @@ html {
   background-image: url("images/etchBackground.jpg");
 }
 
+h1 {
+  margin-bottom: .25rem;
+}
+
 .container {
   margin: 0 auto;
   width: 80%;
@@ -9,6 +13,7 @@ html {
 }
 
 button {
+  margin-bottom: .5rem;
   padding: 1rem 2rem;
   background-color: transparent;
   border-radius: 9%;
@@ -28,8 +33,4 @@ button {
   height: .75rem;
   width: .75rem;
   background-color: black;
-}
-
-.square:hover {
-  background-color: white;
 }
